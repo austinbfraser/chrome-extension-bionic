@@ -14,6 +14,7 @@ for (let i = 0; i < text.length; i++) {
       bionic += current.slice(0, (Math.floor(current.length % 2) + 1));
       bionic += '</b>'
       bionic += current.slice((Math.floor(current.length % 2) + 1))
+      console.log(bionic);
       text[i].innerHTML = text[i].innerHTML.replace(`${current}`, `${bionic}`)
       current = '';
     } else {
